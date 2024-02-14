@@ -1,0 +1,90 @@
+@media (min-width: 768px) {
+    .news-input{
+        width: 50%;
+    } 
+}
+pre{
+    color: grey;
+    text-shadow: 10%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* .content{
+    padding-top: 50px;
+} */
+
+body{
+    margin: 0px;
+    background-image: url('bg-img1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+.image-container {
+    width: 150px;
+    height: 175px;    
+} 
+    /* Adjust as needed to add space between the text and the image */
+
+
+@media (max-width: 768px) {
+    .text-primary.flex-sm-row {
+        flex-direction: column;
+    }
+
+    /* .image-container{
+        margin-right: 10px ;
+        margin-left: 10px;
+        margin-top: 10%;
+    } */
+}
+
+/* Media query for smaller screens */
+@media screen and (max-width: 768px) {
+    /* Hide the table headers on small screens */
+    table th {
+        display: none;
+    }
+
+    /* Display table cells as block elements for better stacking */
+    table td {
+        display: block;
+        text-align: left;
+    }
+
+    /* Add padding for better readability */
+    table td {
+        padding: 8px;
+        border: none;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    /* Add some margin to the last cell in each row */
+    table td:last-child {
+        margin-bottom: 10px;
+    }
+}
+
+.footer {
+    position: relative;
+    background-color: #343a40; /* Dark color for the footer background */
+    color: #fff; /* Text color for the footer content */
+    padding: 10px 0; /* Adjust padding as needed */
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow-icon {
+    position: absolute;
+    bottom: 30px; /* Adjust the position of the arrow as needed */
+    left: 95%;
+    transform: translateX(-50%);
+    color: #007bff; /* Color of the arrow icon */
+}
+
